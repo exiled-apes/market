@@ -82,8 +82,9 @@ export const ArtCreateView = () => {
   );
 
   useEffect(() => {
-    if (step_param) setStep(parseInt(step_param));
-    else gotoStep(0);
+    /* if (step_param) setStep(parseInt(step_param));
+    else  */
+    gotoStep(0);
   }, [step_param, gotoStep]);
 
   // store files
@@ -221,14 +222,17 @@ const CategoryStep = (props: {
     <>
       <Row className="call-to-action">
         <h2>Create a new item</h2>
-        <p>
+        {/* <p>
           First time creating on Metaplex?{' '}
           <a href="#">Read our creators’ guide.</a>
-        </p>
+        </p> */}
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>
-        <Col>
-          <Row>
+        <p>
+          Disabled - this store is only for selling Exiled Apes.
+        </p>
+        {/*<Col>
+           <Row>
             <Button
               className="type-btn"
               size="large"
@@ -275,8 +279,8 @@ const CategoryStep = (props: {
                 <div className="type-btn-description">GLB</div>
               </div>
             </Button>
-          </Row>
-        </Col>
+          </Row> 
+        </Col>*/}
       </Row>
     </>
   );
