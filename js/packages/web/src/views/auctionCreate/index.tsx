@@ -618,12 +618,12 @@ const CategoryStep = (props: {
     <>
       <Row className="call-to-action">
         <h2>List an item</h2>
-        <p>
+        {/* <p>
           First time listing on Metaplex? <a>Read our sellers' guide.</a>
-        </p>
+        </p> */}
       </Row>
       <Row justify={width < 768 ? 'center' : 'start'}>
-        <Col>
+        <Col>{/*
           <Row>
             <Button
               className="type-btn"
@@ -666,7 +666,7 @@ const CategoryStep = (props: {
                 </div>
               </div>
             </Button>
-          </Row>
+          </Row> */}
           <Row>
             <Button
               className="type-btn"
